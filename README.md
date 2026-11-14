@@ -99,6 +99,18 @@ Backend de un SaaS de control horario y nómina **en producción**: registro de 
 
 `Java 17` `Spring Boot` `Spring Security` `JPA` `PostgreSQL` `Stripe` `Docker` `JUnit 5` `Mockito`
 
+### 🏪 [Franchise API — API reactiva con Clean Architecture](https://github.com/alexpase322/franchise-api-accenture)
+
+API REST reactiva para administrar franquicias, sucursales y productos, que además consulta el producto con más stock de cada sucursal. Desarrollada como prueba técnica de backend.
+
+- **Spring WebFlux** con *router functions* y flujos reactivos de punta a punta con Project Reactor (`Mono` / `Flux`).
+- **Clean Architecture** con el plugin de Bancolombia: dominio sin dependencias de Spring ni de AWS, casos de uso y adaptadores separados en módulos.
+- Persistencia en **DynamoDB** con el AWS SDK v2 asíncrono y claves compuestas que siguen la jerarquía franquicia → sucursal → producto.
+- Infraestructura como código con **Terraform** y entorno local completo con **Docker Compose** y DynamoDB Local, que se levanta con un solo comando.
+- Pruebas unitarias con **JUnit 5, Mockito y StepVerifier**, con 100 % de cobertura en los casos de uso.
+
+`Java 21` `Spring Boot 4` `WebFlux` `DynamoDB` `Terraform` `Docker` `JUnit 5` `Mockito` `StepVerifier`
+
 ### 🎬 [Platzi Play API](https://github.com/alexpase322/platziplay) · [Demo en vivo con Swagger](https://platziplay-tod8.onrender.com/platzi-play/api/swagger-ui/index.html)
 
 API REST de catálogo de contenido con integración de inteligencia artificial dentro del ecosistema Java.
@@ -177,6 +189,7 @@ Full stack developer with 2+ years of professional experience building enterpris
 ### Featured projects
 
 - **[Jornixs Backend](https://github.com/alexpase322/jornixs_backend)**: production time-tracking and payroll SaaS. Spring Boot 3.5, JWT with role-based access, Stripe subscriptions and webhooks, PDF/Excel payroll reports, Docker, PostgreSQL, unit tests with JUnit 5 and Mockito.
+- **[Franchise API](https://github.com/alexpase322/franchise-api-accenture)**: reactive REST API built as a backend technical test. Spring WebFlux with router functions, Clean Architecture (Bancolombia plugin), DynamoDB with the AWS SDK v2 async client, Terraform, Docker Compose with DynamoDB Local, and unit tests with JUnit 5, Mockito and StepVerifier.
 - **[Platzi Play API](https://github.com/alexpase322/platziplay)**: catalog REST API with AI features via LangChain4j, MapStruct, Docker Compose, deployed on Render with live Swagger docs.
 - **[Academic Tutoring System](https://github.com/alexpase322/monitorias)**: backend foundation for Universidad Surcolombiana's tutoring program, with a 17-entity JPA domain model on SQL Server.
 
